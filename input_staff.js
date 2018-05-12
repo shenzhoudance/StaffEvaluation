@@ -2,7 +2,7 @@
 
 'use strict';
 
-var dappAddress = "n1zdqWBYt1zsCVobayL1SJEKpkuGwWo2voV";
+var dappAddress = "n1sDKeiFkVBrptr4f2Eqn7mDtLiWekh9cts";
 var InputStaff = function() {
 
 }

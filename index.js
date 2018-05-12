@@ -2,7 +2,7 @@
 
 'use strict';
 
-var dappAddress = "n1zdqWBYt1zsCVobayL1SJEKpkuGwWo2voV";
+var dappAddress = "n1sDKeiFkVBrptr4f2Eqn7mDtLiWekh9cts";
 var StaffEvaluationShow = function() {
 
 }
@@ -143,7 +143,6 @@ StaffEvaluationShow.prototype = {
             // 显示内容
             var evaluation_list = template(document.getElementById('evaluation_list_t').innerHTML);
             var evaluation_list_html = evaluation_list({list: evaluation_info.data});
-            console.log(evaluation_list_html);
             $("#evaluation_list").append(evaluation_list_html);
         }
     },

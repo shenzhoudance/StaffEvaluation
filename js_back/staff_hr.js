@@ -164,7 +164,7 @@ StaffEvaluationSys.prototype = {
         obj.staffId = obj.staffId.trim();
         var result = this.query_staff_by_from( obj.staffId);
         if(result.success){
-            //obj.from = Blockchain.transaction.from;
+            obj.from = Blockchain.transaction.from;
             var result2 = this.query_staff_evaluation_by_key(obj.staffId+"_"+obj.from);
             if(result2.success){
                 addResult.success = false;
