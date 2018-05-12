@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>菁英网</title>
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="lib/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css">
+<!-- Dropdownhover CSS -->
+<link rel="stylesheet" href="lib/bootstrap-4.0.0-dist/css/bootstrap-dropdownhover.min.css" type="text/css">
+<!-- fonts awesome -->
+<link rel="stylesheet" href="lib/font/css/font-awesome.min.css" type="text/css">
+<!-- Plugin CSS -->
+<link rel="stylesheet" href="lib/animation/animate.min.css" type="text/css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style_index.css" type="text/css">
+<link rel="stylesheet" href="css/commet_list.css" type="text/css">
+<!-- Owl Carousel Assets -->
+<link href="lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="lib/owl-carousel/owl.theme.css" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="loading">
+	</div>
+</div>
+<header>
+	<!-- top-menu -->
+	<div class="top-menu">
+		<!-- mainNav -->
+		<div id="mainNav" class="navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-inverse navbar-default">
+
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" width="300"></a>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeIn fadeInLeft fadeInUp fadeInRight">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">首页</a></li>
+								<li><a href="input_staff.html">菁英加入</a></li>
+								<li><a href="input_evaluation.html"><span>菁英点评</span></a></li>
+							</ul>
+							<!-- /.navbar-collapse -->
+						</div>
+
+					</nav>
+				</div>
+				<div class="row" style="color: #555;text-align: right;">注意: 为了能使用菁英网，请安装<a style="color: #555;" target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a>插件</div>
+			</div>
+
+
+		</div>
+		<!-- /mainNav -->
+	</div>
+	<!-- /top-menu -->
+
+</header>
+<section class="for-box">
+	<div class="container" style="margin-bottom:20px;">
+			<span class="input-group-addon btn btn-primary" id="search_myself" 
+			      style="height: 50px;font-size: 18px;border-radius: 8px;">我是菁英</span>	
+	</div>
+	<div class="container">
+		<div class="input-group">
+			<input type="text" class="form-control input-lg" placeholder="请输入菁英的星云链地址" id="search_key_input">
+			<span class="input-group-addon btn btn-primary" id="commit_search">查询</span>
+		</div>
+	</div>
+</section>
+<section class="instructor-container" id="section_staff_info">
+	<!-- .instructor-container -->
+	<div class="container">
+		<div class="tittle">
+			<h2>
+					菁 英 信 息
+			</h2>
+		</div>
+		<div class="row">
+			<div class="owl-demo-outer">
+				<!-- #owl-demo -->
+				<div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+					<div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 2972px; left: 0px; display: block; transition: all 0ms ease; transform: translate3d(0px, 0px, 0px);">
+						<div class="owl-item" style="width: 743px;"><div class="item">
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<!-- .instructor -->
+								<div class="instructor" id="staff_info">
+									<div class="instructor-img">
+										<img id="staff_man" src="img\\staff.jpg" width="200" alt="instructor-img1">
+										<img id="staff_woman" src="img\\staff-woman.jpg" width="200" alt="instructor-img1">
+									</div>
+									<h4 id="staff_name">
+									</h4>
+									<h4>
+										<span>性别:</span><span id="staff_sex"></span>
+										<span> | 生日:</span><span id="staff_birthday"></span>
+										<span> | 邮箱:</span><span id="staff_email"></span>
+									</h4>
+									<p id="staff_own_evaluation"></p>
+								</div>
+								<div class="alert alert-success" role="alert" align="center" id="staff_warning">
+									<strong>抱歉 </strong>没有查询到该菁英信息
+								  </div>
+								<!-- /.instructor -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					<!-- /#owl-demo -->
+		<div class="owl-controls clickable" style="display: block;"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+		</div>
+		</div>
+	</div>
+	<!-- /.instructor-container -->
+</section>
+<section class="for-box" id="section_staff_evaluation">
+	<!-- .for-box -->
+	<div class="container">
+		<div class="tittle">
+			<h2>
+				菁 英 点 评
+			</h2>
+		</div>
+	</div>
+	<div class="container" id="evaluation_list">
+	</div>
+	<div class="alert alert-success" role="alert" align="center" id="evaluation_warning">
+		<strong>抱歉 </strong>暂时没有该菁英的点评信息
+	</div>
+	<!-- /.for-box -->
+</section>
+
+
+<!-- START FOOTER SECTION -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="flog"><img src="img/logo.png" alt="f-logo" /></div>
+			</div>
+			<div class="col-12-12 col-sm-6 col-md-6">
+				<span class="address">科技园, 南山区, 深圳市<br>
+				 追梦的地方<br>
+			</div>
+			<div class="col-12-12 col-sm-6 col-md-6">
+				<span class="phone">Nebulas-Address:n1RMP8pgASAXpB2ZG3aqotHBaH92697Saab<br>
+					E-mail: 1289418330@qq.com</span>
+			</div>
+			<div class="col-md-12" style="margin-top:80px;">
+				<div class="copyright">
+					Copyright &copy; 2018.星云链社区爱好者.
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- jQuery -->
+<script src="lib/assets/js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="lib/assets/js/bootstrap.min.js"></script>
+<script src="lib/assets/js/bootstrap-dropdownhover.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="lib/assets/js/jquery.easing.min.js"></script>
+<script src="lib/assets/js/jquery.fittext.js"></script>
+<script src="lib/assets/js/wow.min.js"></script>
+<script src="lib/assets/js/modernizr.js"></script>
+<!-- Modernizr -->
+<script src="lib/assets/js/main.js"></script>
+<!-- Resource jQuery -->
+<!--  countTo JavaScript  -->
+<script type="text/javascript" src="lib/assets/js/jquery.countTo.js"></script>
+<!-- owl carousel -->
+<script src="lib/assets/owl-carousel/owl.carousel.js"></script>
+<!--  Custom Theme JavaScript  -->
+<script src="lib/assets/js/custom.js"></script>
+<script src="lib/template.js"></script>
+<script src="index.js"></script>
+
+
+<script id="evaluation_list_t" type="text/html">
+	<section class="comments">
+		<%if(list.length > 0 ){%>
+		<%for(var i = 0; i < list.length; i++) {%>
+			<article class="comment">
+				<a class="comment-img" href="#non">
+				<img src="img\\hr.jpg" alt="" width="50" height="50">
+				</a>
+				<div class="comment-body">
+				<div class="text">
+					<p><%:=list[i].evaluation%></p>
+				</div>
+				<div class="text">
+						<p>总体评分：<%:=list[i].star%>分</p>
+					</div>
+				<p class="attribution">by <a style="color:#ff8021;" href="javascript:void(0)"><%:=list[i].hrName%></a> from <span style="color:#ff8021;"><%:=list[i].company%></span> at <span style="color:#ff8021;"><%:=list[i].evaTime%></span></p>
+				</div>	
+			</article>
+		<%}}%>
+	</section>
+</script>
+</body>
+
+</html>

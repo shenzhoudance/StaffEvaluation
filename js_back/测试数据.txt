@@ -1,0 +1,2 @@
+[{"name":"抠脚","sex":"男","birthday":"1990-11-15","from" : "s1"}]
+[{"staffId":"n1RMP8pgASAXpB2ZG3aqotHBaH92697Saab","company":"tencent","hrName":"zzz","star":"2星","evaluation":"工作能力差，爱玩股票"}]
